@@ -1,0 +1,47 @@
+/* Offer Banner */
+.offer-banner {
+  background-color: red;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1100; /* Above the navbar */
+}
+
+/* Navbar */
+.navbar {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 50px; /* Height of the offer banner */
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: 1000; /* Below the offer banner */
+}
+
+/* Main Content */
+main {
+  padding-top: 100px; /* Combined height of offer banner and navbar */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 758px) {
+  .offer-banner {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .navbar {
+    top: 40px; /* Adjusted height of the offer banner */
+  }
+  main {
+    padding-top: 90px; /* Adjusted combined height */
+  }
+}

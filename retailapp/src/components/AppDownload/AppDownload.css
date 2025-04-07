@@ -1,0 +1,86 @@
+/* Main container styling */
+.app-download {
+    text-align: center;
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1250px; /* Adjusted width for better responsiveness */
+    width: 90vw; /* Makes it more responsive */
+    margin: 40px auto;
+    font-weight: 500;
+}
+
+/* Heading styling */
+.app-download p {
+    font-size: 24px; /* Bigger font size */
+    font-weight: 700; /* Bolder */
+    color: #222;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Emphasized text */
+.app-download p strong {
+    font-size: 28px; /* Larger font for emphasis */
+    color: tomato; /* Darker color */
+}
+
+/* Platform button container */
+.app-download-platforms {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Wraps images on smaller screens */
+}
+
+/* Styling the images */
+.app-download-platforms img {
+    max-width: 160px; /* Slightly larger */
+    width: 18%;
+    min-width: 120px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.app-download-platforms img:hover {
+    transform: scale(1.1);
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 750px) {
+    .app-download {
+      padding: 30px;
+    }
+  
+    .app-download p {
+      font-size: 22px;
+    }
+
+    .app-download p strong {
+      font-size: 26px;
+    }
+
+    .app-download-platforms img {
+      width: 130px;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-download {
+      padding: 20px;
+    }
+
+    .app-download p {
+      font-size: 20px;
+    }
+
+    .app-download p strong {
+      font-size: 24px;
+    }
+
+    .app-download-platforms img {
+      width: 110px;
+    }
+}

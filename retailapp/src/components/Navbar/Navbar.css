@@ -1,0 +1,190 @@
+/* ✅ Offer Banner - Fixed at Top */
+.offer-banner {
+  background-color: red;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
+  animation: flash 1.5s infinite alternate;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1100; /* Above the navbar */
+}
+
+/* Flash Animation */
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
+/* ✅ Navbar - Adjusted to Avoid Overlap */
+.navbar {
+  padding: 15px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 50px; /* Moved below offer banner */
+  left: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Below the offer banner */
+}
+
+/* Logo Styling */
+.logo-text {
+  font-size: 32px;
+  font-weight: bold;
+  color: tomato;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-left: 20px;
+  animation: fadeIn 2s;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Navbar menu */
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  font-size: 18px;
+  color: #49557e;
+  margin: 0 auto;
+}
+
+/* Navbar items */
+.navbar-menu li {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navbar-menu li:hover {
+  color: tomato;
+}
+
+/* Active menu item */
+.navbar .active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #49557e;
+}
+
+/* Right Section */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-right: 20px;
+}
+
+/* Sign-in button */
+.navbar button {
+  background: transparent;
+  font-size: 16px;
+  color: #49557e;
+  border: 1px solid tomato;
+  padding: 8px 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbar button:hover {
+  background-color: #fff4f2;
+}
+
+/* Search icon with notification dot */
+.navbar-search-icon {
+  position: relative;
+}
+
+.navbar-search-icon .dot {
+  position: absolute;
+  min-width: 10px;
+  min-height: 10px;
+  background-color: tomato;
+  border-radius: 50%;
+  top: -5px;
+  right: -5px;
+}
+
+/* ✅ Responsive Navbar */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 12px 15px;
+    top: 40px; /* Adjusted */
+  }
+
+  .logo-text {
+    font-size: 28px;
+    margin-left: 10px;
+  }
+
+  .navbar-menu {
+    gap: 15px;
+    font-size: 16px;
+  }
+
+  .navbar-right {
+    gap: 20px;
+  }
+}
+
+/* ✅ Mobile View Fixes */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    top: 50px; /* Keeps space for the offer banner */
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+    display: none;
+  }
+
+  .navbar-menu.show {
+    display: flex;
+  }
+
+  .navbar-right {
+    margin-top: 10px;
+    gap: 15px;
+  }
+
+  .navbar button {
+    padding: 8px 20px;
+  }
+
+  /* Mobile Menu Toggle */
+  .menu-icon {
+    font-size: 24px;
+    color: #49557e;
+    cursor: pointer;
+    display: block;
+  }
+}
+
+

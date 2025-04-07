@@ -1,0 +1,79 @@
+.gudi-padwa-offer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .offer-content {
+    text-align: center;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 600px;
+  }
+  
+  .offer-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .offer-title {
+    font-size: 28px;
+    color: #d32f2f;
+    margin: 20px 0 10px;
+    font-family: 'Georgia', serif;
+  }
+  
+  .offer-details {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .highlight {
+    color: #d32f2f;
+    font-weight: bold;
+  }
+  
+  .shop-now-btn {
+    background-color: #d32f2f;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .shop-now-btn:hover {
+    background-color: #a02828;
+  }
+  
+  @media (max-width: 768px) {
+    .offer-content {
+      padding: 20px;
+    }
+  
+    .offer-title {
+      font-size: 24px;
+    }
+  
+    .offer-details {
+      font-size: 18px;
+    }
+  
+    .shop-now-btn {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  }
+  

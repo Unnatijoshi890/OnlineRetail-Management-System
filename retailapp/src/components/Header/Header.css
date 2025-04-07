@@ -1,0 +1,80 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Section */
+.header {
+    height: 34vw;
+    width: 100%;
+    margin-top: 110px; /* Offer banner (50px) + navbar (60px) */
+    background: url('/assets/top-view-bunch-fresh-food-donation-with-copy-space.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+/* Header Content */
+.header-contents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    bottom: 5%;
+    left: 14vw;
+    border-radius: 12px;
+    max-width: 50%;
+}
+
+/* Header Title - Bold and Large */
+.header-title {
+    font-size: max(2vw, 32px);
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure Title CSS is Applied */
+.header .header-title {
+    font-size: max(4vw, 32px) !important; /* Ensures it applies */
+    font-weight: bold !important;
+}
+
+/* Tomato-Colored Button */
+.header-btn {
+    background-color: tomato;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Button Hover Effect */
+.header-btn:hover {
+    background-color: #e04e3f; /* Slightly darker shade on hover */
+}
+
+/* Mobile Responsive */
+@media (max-width: 750px) {
+    .header-contents {
+        left: 5vw;
+        max-width: 80%;
+    }
+
+    .header-title {
+        font-size: max(6vw, 24px);
+    }
+
+    .header-btn {
+        padding: 8px 16px;
+    }
+}
